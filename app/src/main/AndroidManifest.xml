@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.layout.a312689543.xiaomu"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sample_6"
+        android:label="帅仁"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="android.test.runner"/>
+        <activity android:name=".MainActivity"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <instrumentation
+        android:label="this is a test"
+        android:targetPackage="com.layout.a312689543.xiaomu"
+        android:name="android.test.InstrumentationTestRunner"></instrumentation>
+
+</manifest>
